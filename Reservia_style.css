@@ -1,0 +1,450 @@
+@font-face
+{
+	font-family: "Raleway";
+	src: url('Raleway.ttf') format('truetype');
+}
+
+*{
+	margin: 0px;
+	padding :0;
+	overflow-wrap: break-word;
+	font-family: "Raleway";
+}
+
+p
+{
+	margin: 10px;
+}
+
+h1
+{
+	margin: 10px;
+}
+
+h2
+{
+	margin: 10px;
+}
+
+h3
+{
+	margin: 10px;
+}
+
+
+header 
+{
+	height: 100px;
+	margin-left: 20px;
+	background-image: url("logo/reservia@3x.png");
+	background-repeat: no-repeat;
+	background-size: 120px auto;
+}
+
+img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+img:hover
+{
+	opacity: .5;
+}
+
+nav
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+.logo
+{
+	width: 	120px ;
+	height: auto;
+	margin:	20px;
+	position: left;
+}
+
+.inscription 
+{
+	margin-right: 20px;
+}
+
+
+.menu
+{
+	margin-top: 30px;
+	margin-right: 50px;
+	text-decoration: none;
+	text-align: right;
+}
+
+.lienmenu
+{
+	font-size: 1.6em;
+	text-decoration: none;
+	text-align: right;
+	overflow: hidden;
+}
+
+.lienmenu:visited
+{
+	color: black;
+}
+
+.lienmenu:hover
+{
+	color: #2265FC;
+}
+
+.lienmenu:active
+{
+	color: #2265FC;
+	border-top: solid 2px #2265FC;
+}
+
+.inscription
+{
+	font-size: 1.6em;
+	color: #2265FC;
+	text-decoration: none;
+	font-weight: bold;
+	text-align: top-right;
+}
+
+.inscription:hover
+{
+	color: black;
+}
+
+#Map
+{
+	size: 30px;
+	padding: 15px;
+	color: black !important;
+	background-color: #F2F2F2;
+	border-radius: 20px 0px 0px 20px;
+}
+
+#site-search
+{
+	height: 50px;
+	width: 200px;
+	font-family:"Raleway";
+	border: none;
+}
+
+.Rechercher
+{
+	height: 50px;
+	width: 100px;
+	color: white;
+	font-weight: bold;
+	font-family:"Raleway";
+	border-radius: 0px 20px 20px 0px;
+	background-color: #2265FC;
+	border-color: none;
+	box-shadow: none;
+}
+
+.Rechercher:selected
+{
+	height: 50px;
+	width: 100px;
+	color: white;
+	font-weight: bold;
+	font-family:"Raleway";
+	border-radius: 0px 20px 20px 0px;
+	background-color: #2265FC;
+	border-color: white;
+	box-shadow: none;
+}
+
+.fa-info 
+{
+	color: #2265FC;
+	border: 1px solid #F2F2F2;
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
+	padding-right: 10px !important;
+	padding-left: 10px !important;
+	background-color: white !important;
+	border-radius: 50%;
+}
+
+.fas
+{
+	box-sizing: 40px;
+	color: #2265FC;
+	padding: 10px;
+	background-size: 40px;
+	background-color: #DEEBFF;
+	border-radius: 50%;
+}
+
+.fa-child
+{
+	padding-right: 12px;
+	padding-left: 12px;
+}
+
+.gold
+{
+	color: #2265FC !important;
+}
+
+.fa-star
+{
+	color: #F2F2F2;
+}
+
+.Filtres
+{
+	border: 1px solid #F2F2F2;
+	border-radius: 20px;
+	max-width: 300px;
+	height: 40px;
+	padding-right: 15px;
+	margin-left: 20px;
+}
+
+.Filtres:hover
+{
+	color: #2265FC;
+	font-weight: bold;
+}
+
+.Filtres:active
+{
+	background-color: #2265FC;
+	color: white;
+	font-weight: bold;
+}
+
+#Filtres
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#flexheb
+{
+	display: flex;
+	justify-content: space-around; 
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#HM
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap-reverse;
+}
+
+#Marseille 
+{
+	background-color: #F2F2F2;
+	border-radius: 20px;
+	flex:2;
+	min-width: 600px; 
+	margin: 20px 20px 20px 20px;
+}
+
+.Habitations 
+{
+	width: 100%; 
+	height: 150px; 
+	object-fit: cover;
+	border-radius: 20px;
+}
+
+.Hébergements 
+{
+	min-width: 300px;
+	max-width: 400px;
+	flex: 1;
+	margin-left: 10px;
+	margin-right: 10px;
+	border:7px solid white;
+	background-color: white;
+	border-radius: 20px;
+	margin-top:40px; 
+	box-shadow: 0 0 10px;
+  }
+
+#populaires
+{
+	background-color: #F2F2F2;
+	flex:1;
+	border-radius: 20px;
+	margin: 20px 20px 20px 20px;
+}
+
+.pop
+{
+	float: left;
+	margin-right: 20px;
+	width: 33%; 
+	height: 200px; 
+	object-fit: cover;
+	border-radius: 20px;
+}
+
+.populaires
+{
+	border: 7px solid white;
+	background-color: white;
+	border-radius: 20px;
+	margin: 20px; 
+	min-width: 200px;
+	min-height: 200px;
+	box-shadow: 0 0 10px;
+  }
+
+  .stars
+  {
+  	margin-left: 10px;
+  }
+
+  .starspop
+  {
+  	margin-top: 50px;
+  }
+
+  .hotelpop
+  {
+  	margin: 20px;
+  }
+
+  .prixpop
+  {
+  	margin-left: 10px;
+  }
+
+.fa-chart-line
+{ 
+	box-sizing: 0px;
+	color: black;
+	background-size: 40px;
+	background-color: #F2F2F2;
+	border-radius: 50%;
+	margin-top: -5px;
+	float: right;
+}
+.Titresection
+{
+	font-size: 1.6em !important;
+	margin-left: 30px !important;
+	margin-top: 20px !important;
+}
+
+#Afficherplus
+{
+	font-size: 1.4em !important;
+	font-weight: bold;
+	margin-left: 30px !important;
+	margin-top: 40px !important;
+}
+
+
+#flexact
+{
+	display: flex;
+	align-items: stretch;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.act
+{
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.ActVer
+{
+	flex-grow: 1;
+	border-radius: 20px;
+	min-width: 250px;
+	border: 7px solid white;
+	background-color: white;
+	box-shadow: 0 0 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.ver
+{
+	width: 100%;
+	height: 92%;
+	object-fit: cover;
+	border-radius: 20px;
+}
+
+
+
+.ActHor
+{
+	width: 100%;
+	min-width: 250px;
+	border-radius: 20px;
+	border: 7px solid white;
+	background-color: white;
+	box-shadow: 0 0 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
+
+.hor
+{
+	width: 100%;
+	height: 90%;
+	object-fit: cover;
+	border-radius: 20px;
+}
+
+footer
+{
+	background-color: #F2F2F2
+}
+
+#footer
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.divfooter
+{
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.footertitre
+{
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+
+.footerlink
+{
+	text-decoration: none;
+	color: black;
+	margin-bottom: 10px;
+}
+
+.footerlink:hover
+{
+	color: #2265FC;
+}
