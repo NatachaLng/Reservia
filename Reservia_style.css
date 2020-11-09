@@ -302,7 +302,7 @@ nav
 	margin: 20px; 
 	min-width: 200px;
 	min-height: 200px;
-	box-shadow: 0 0 10px;
+	box-shadow: 25px 16px 42px -9px rgba(186,186,186,0.67);
   }
 
   .stars
@@ -363,21 +363,27 @@ nav
 .act
 {
 	flex-grow: 1;
+	width: 22%;
+	min-width: 250px;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
+	margin: 20px;
 }
 
 .ActVer
 {
+	width: 22%;
+	min-width: 250px;
 	flex-grow: 1;
 	border-radius: 20px;
 	min-width: 250px;
-	border: 7px solid white;
+	border: 0px solid white;
 	background-color: white;
-	box-shadow: 0 0 10px;
+	box-shadow: 25px 16px 42px -9px rgba(186,186,186,0.67);
 	margin-top: 20px;
 	margin-bottom: 20px;
+	margin: 20px;
 }
 
 .ver
@@ -385,31 +391,36 @@ nav
 	width: 100%;
 	height: 92%;
 	object-fit: cover;
-	border-radius: 20px;
+	border-radius: 20px 20px 0 0 ;
 }
 
 
 
 .ActHor
 {
-	width: 100%;
-	min-width: 250px;
+	/*width: 100%;*/
+	/*min-width: 250px;*/
 	border-radius: 20px;
-	border: 7px solid white;
+	border: 0px solid white;
 	background-color: white;
-	box-shadow: 0 0 10px;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	box-shadow: 25px 16px 42px -9px rgba(186,186,186,0.67);
+	max-height: 280px;
+	/*margin-top: 20px;
+	margin-bottom: 20px;*/
 }
 
-
-
+.haut{
+	margin-bottom: 20px;
+}
+.bas{
+	margin-top: 20px;
+}
 .hor
 {
 	width: 100%;
-	height: 90%;
+	height: 80%;
 	object-fit: cover;
-	border-radius: 20px;
+	border-radius: 20px 20px 0 0;
 }
 
 footer
