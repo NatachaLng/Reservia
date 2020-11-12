@@ -1,6 +1,8 @@
+/*GENERAL*/
+
 @font-face
 {
-	font-family: "Raleway";
+	font-family: "Raleway", sans-serif;
 	src: url('Raleway.ttf') format('truetype');
 }
 
@@ -14,6 +16,12 @@
 p
 {
 	margin: 10px;
+}
+
+a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
 }
 
 h1
@@ -31,14 +39,9 @@ h3
 	margin: 10px;
 }
 
-
-header 
-{
-	height: 100px;
-	margin-left: 20px;
-	background-image: url("logo/reservia@3x.png");
-	background-repeat: no-repeat;
-	background-size: 120px auto;
+li {
+    list-style: none;
+    text-decoration: none;
 }
 
 img {
@@ -52,77 +55,79 @@ img:hover
 	opacity: .5;
 }
 
-nav
-{
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
+
+
+/* NAVBAR */
+
+nav,
+.menu,
+.lienmenu {
+    display: flex;
 }
 
-.logo
+nav img 
 {
-	width: 	120px ;
-	height: auto;
-	margin:	20px;
-	position: left;
+    position: static;
+    width: 110px;
+    height: 60px;
+}
+    
+/*.inscription {
+    position: absolute;
+    top: 35px;
+    right: 15px;
+}*/
+
+
+.menu {
+	justify-content: flex-end;
+    align-items: right;
+    width: 100%;
+    height: 50px;
+}
+   
+.lienmenu:hover 
+{
+    border-top: 2px solid #0065FC;
+}
+
+nav 
+{
+    align-content: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+
+.menu {
+    width: 100%;
 }
 
 .inscription 
 {
-	margin-right: 20px;
+	margin: 15px 0 0 10px;
+}
+
+.inscription a {
+    color: #0065FC;
+    font-weight: bold;
+}
+
+.lienmenu,
+.inscription {
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
 }
 
 
-.menu
-{
-	margin-top: 30px;
-	margin-right: 50px;
-	text-decoration: none;
-	text-align: right;
-}
-
-.lienmenu
-{
-	font-size: 1.6em;
-	text-decoration: none;
-	text-align: right;
-	overflow: hidden;
-}
-
-.lienmenu:visited
-{
-	color: black;
-}
-
-.lienmenu:hover
-{
-	color: #2265FC;
-}
-
-.lienmenu:active
-{
-	color: #2265FC;
-	border-top: solid 2px #2265FC;
-}
-
-.inscription
-{
-	font-size: 1.6em;
-	color: #2265FC;
-	text-decoration: none;
-	font-weight: bold;
-	text-align: top-right;
-}
-
-.inscription:hover
-{
-	color: black;
-}
-
+/*HEADER*/
 #Map
 {
 	size: 30px;
 	padding: 15px;
+	padding-bottom: 18px;
 	color: black !important;
 	background-color: #F2F2F2;
 	border-radius: 20px 0px 0px 20px;
@@ -133,7 +138,7 @@ nav
 	height: 50px;
 	width: 200px;
 	font-family:"Raleway";
-	border: none;
+	border: 1px solid #F2F2F2;
 }
 
 .Rechercher
@@ -142,11 +147,13 @@ nav
 	width: 100px;
 	color: white;
 	font-weight: bold;
+	font-size: 0.9em;
 	font-family:"Raleway";
 	border-radius: 0px 20px 20px 0px;
 	background-color: #2265FC;
 	border-color: none;
 	box-shadow: none;
+	margin-left: -4px;
 }
 
 .Rechercher:selected
@@ -162,6 +169,11 @@ nav
 	box-shadow: none;
 }
 
+.rechercher2
+{
+	display: none;
+}
+
 .fa-info 
 {
 	color: #2265FC;
@@ -173,6 +185,27 @@ nav
 	background-color: white !important;
 	border-radius: 50%;
 }
+
+#Filtres
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.Filtres:hover
+{
+	color: #2265FC;
+	font-weight: bold;
+}
+
+.Filtres:active
+{
+	background-color: #2265FC;
+	color: white;
+	font-weight: bold;
+}
+
 
 .fas
 {
@@ -208,27 +241,12 @@ nav
 	height: 40px;
 	padding-right: 15px;
 	margin-left: 20px;
+	margin-bottom: 10px;
 }
 
-.Filtres:hover
-{
-	color: #2265FC;
-	font-weight: bold;
-}
 
-.Filtres:active
-{
-	background-color: #2265FC;
-	color: white;
-	font-weight: bold;
-}
+/*HEBERGEMENTS*/
 
-#Filtres
-{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-}
 
 #flexheb
 {
@@ -249,9 +267,9 @@ nav
 {
 	background-color: #F2F2F2;
 	border-radius: 20px;
-	flex:2;
-	min-width: 600px; 
-	margin: 20px 20px 20px 20px;
+	flex:3;
+	min-width: 360px;
+	margin: 20px;
 }
 
 .Habitations 
@@ -259,27 +277,29 @@ nav
 	width: 100%; 
 	height: 150px; 
 	object-fit: cover;
-	border-radius: 20px;
+	border-radius: 20px 20px 0 0 ;
 }
 
 .Hébergements 
 {
-	min-width: 300px;
-	max-width: 400px;
-	flex: 1;
+	min-width: 250px;
+	max-width: 300px;
 	margin-left: 10px;
 	margin-right: 10px;
 	border:7px solid white;
 	background-color: white;
 	border-radius: 20px;
 	margin-top:40px; 
-	box-shadow: 0 0 10px;
+	box-shadow: 25px 16px 42px -9px rgba(186,186,186,0.67);
   }
+
+ /*POPULAIRES*/ 
 
 #populaires
 {
 	background-color: #F2F2F2;
 	flex:1;
+	min-width: 340px;
 	border-radius: 20px;
 	margin: 20px 20px 20px 20px;
 }
@@ -291,7 +311,7 @@ nav
 	width: 33%; 
 	height: 200px; 
 	object-fit: cover;
-	border-radius: 20px;
+	border-radius: 20px 0 0 20px;
 }
 
 .populaires
@@ -300,7 +320,7 @@ nav
 	background-color: white;
 	border-radius: 20px;
 	margin: 20px; 
-	min-width: 200px;
+	min-width: 250px;
 	min-height: 200px;
 	box-shadow: 25px 16px 42px -9px rgba(186,186,186,0.67);
   }
@@ -330,7 +350,7 @@ nav
 	box-sizing: 0px;
 	color: black;
 	background-size: 40px;
-	background-color: #F2F2F2;
+	background-color: #F2f2f2;
 	border-radius: 50%;
 	margin-top: -5px;
 	float: right;
@@ -350,8 +370,9 @@ nav
 	margin-top: 40px !important;
 }
 
+/*ACTIVITES*/
 
-#flexact
+#flexact1
 {
 	display: flex;
 	align-items: stretch;
@@ -360,7 +381,7 @@ nav
 	justify-content: space-around;
 }
 
-.act
+.flexact3
 {
 	flex-grow: 1;
 	width: 22%;
@@ -389,7 +410,7 @@ nav
 .ver
 {
 	width: 100%;
-	height: 92%;
+	height: 90%;
 	object-fit: cover;
 	border-radius: 20px 20px 0 0 ;
 }
@@ -423,6 +444,8 @@ nav
 	border-radius: 20px 20px 0 0;
 }
 
+/*FOOTER*/
+
 footer
 {
 	background-color: #F2F2F2
@@ -433,11 +456,11 @@ footer
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-around;
 }
 
 .divfooter
 {
+	flex: 0.33;
 	margin-top: 40px;
 	margin-bottom: 40px;
 }
@@ -458,4 +481,88 @@ footer
 .footerlink:hover
 {
 	color: #2265FC;
+}
+
+
+@media screen and (max-width: 375px) 
+
+{
+
+nav img {
+    position: absolute;
+    margin: 0 15px 0px 15px;
+    width: 110px;
+    height: 60px;
+}
+
+.menu {
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 75px;
+    padding: 0;
+    width: 100%;
+    height: 50px;
+}
+
+.inscription {
+    position: absolute;
+    top:10px;
+    right: 0px;
+}
+
+.lienmenu {
+    width: 100%;
+}
+
+.lienmenu
+{
+	border-bottom: 2px solid #F2F2F2 ;
+}
+
+.lienmenu:hover {
+    border-bottom: 2px solid #0065FC;
+    border-top: none;
+} 
+
+.lienmenu a:hover {
+    color: #0065FC;
+}
+
+}
+/*
+#Marseille
+{
+	background-color: white;
+}
+
+
+#populaires
+{
+	margin: 0 0 0 0;
+	border-radius: none !important;
+}
+
+
+.populaires
+{
+	height: 100px;
+}
+.pop
+{
+	width: 40%;
+	
+}
+
+.Hébergements
+{
+	width: 90%;
+	max-width: 340px;
+}
+
+.Titresection
+{
+	margin: 0 0 0 0;
+}
+
+
 }

@@ -4,17 +4,25 @@
 	<title>Reservia</title>
 	<link rel="stylesheet" type="text/css" href="Reservia_style.css">
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://kit.fontawesome.com/2b64b48d7b.js" crossorigin="anonymous"></script>
   </head>
+
 <body>
-	<header>
-		<!--<img id="logo" src="logo/reservia@3x.png" alt="logo reservia" title="Logo reservia">-->
+
 		<nav>
-			<div class="menu"><a href="#Marseille" class="lienmenu">Hébergements</a></div>
-			<div class="menu"><a href="#Activites" class="lienmenu">Activités</a></div>
-			<div class="menu"><a href="Reservia" class="inscription">S'inscrire</a></div>
+			<img src="logo/reservia@3x.png" alt="logo reservia" title="Logo reservia">
+			<ul class="menu">
+			<li class="lienmenu"><a href="#Marseille">Hébergements</a></div>
+			<li class="lienmenu"><a href="#Activites">Activités</a></div>
+			<li class="inscription"><a href="#">S'inscrire</a></div>
+			</ul>
 		</nav>
-	</header>
+
+
+	<main>
+
+	<header>
 	<section class="corps">
 		<h1>Trouvez votre hébergement pour des vacances de rêves</h1>
 		<p>En plein centre ville ou en pleine nature</p>
@@ -24,6 +32,7 @@
         		type="button">
     			Rechercher
 			</button></p>
+			<button class="rechercher2"><i class="fas fa-search"></i></button>
 		<section id="Filtres">
 		<h2>Filtres</h2>
 		<div class="Filtres" >
@@ -42,6 +51,8 @@
 
 		<p><i class="fas fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
 	</section>
+	</header>
+
 	<section id="HM">
 	<section id="Marseille">
 		<h1 class="Titresection">Hébergements à Marseille</h1>
@@ -121,6 +132,7 @@
 		</div>
 		<p id="Afficherplus">Afficher plus</p>			
 	</section>
+
 	<aside id="populaires"> 
 		<h1 class="Titresection">Les plus populaires <i class="fas fa-chart-line"></i></h1>
 		<div class="populaires">
@@ -161,39 +173,42 @@
 		</div>
 		</section>
 	</aside>
+
 	<section id="Activites">
 		<h1 class="Titresection">Activités à Marseille</h1>
-	<div id="flexact">
+	<div id="flexact1">
 		<div class='ActVer'>
-			<img class="ver" src="activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux port" title="Vieux port">
+			<img class="ver" src="activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux port" title="Vieux port">
 			<h3>Vieux Port</h3>
 		</div>
-		<div class='act'>
+		<div class='flexact3'>
 			<div class="ActHor haut">
-				<img class="hor" src="activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues" title="Fort de Pomègues">
+				<img class="hor" src="activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues" title="Fort de Pomègues">
 				<h3>Fort de Pomègues</h3>
 			</div>
 			<div class="ActHor bas">
-				<img class="hor" src="activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Iles du Frioul" title="Iles du Frioul">
+				<img class="hor" src="activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Iles du Frioul" title="Iles du Frioul">
 				<h3>Iles du Frioul</h3>
 			</div>
 		</div>
 		<div class='ActVer'>
-			<img class="ver" src="activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques" title="Parc National des Calanques">
+			<img class="ver" src="activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques" title="Parc National des Calanques">
 			<h3>Parc National des Calanques</h3>
 		</div>
-		<div class="act">
+		<div class="flexact3">
 			<div class="ActHor haut">
-				<img class="hor" src="activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde" title="Notre-Dame-de-la-Garde">
+				<img class="hor" src="activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde" title="Notre-Dame-de-la-Garde">
 				<h3>Notre-Dame-de-la-Garde</h3>
 			</div>
 			<div class="ActHor bas">
-				<img class="hor" src="activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp" title="Parc Longchamp">
+				<img class="hor" src="activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp" title="Parc Longchamp">
 				<h3>Parc Longchamp</h3>
 			</div>
 		</div>
 	</div>
 	</section>
+</main>
+
 	<footer id="footer">
 		<div class="divfooter">
 			<p class="footertitre">A propos</p>
