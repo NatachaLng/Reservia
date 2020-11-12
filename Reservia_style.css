@@ -171,7 +171,21 @@ nav
 
 .rechercher2
 {
-	display: none;
+    border-radius: 0px 20px 20px 0px;
+    border: none;
+    padding-top: 3px;
+    padding-bottom: 6px;
+    margin-left: -3px;
+    size: 30px;
+    font-size: 20px;
+    background-color: #0065FC;
+    color: white;
+}
+
+.fa-search
+{
+	background-color: #0065DC !important;
+	color: white !important;
 }
 
 .fa-info 
@@ -267,7 +281,7 @@ nav
 {
 	background-color: #F2F2F2;
 	border-radius: 20px;
-	flex:3;
+	flex:2;
 	min-width: 360px;
 	margin: 20px;
 }
@@ -299,7 +313,6 @@ nav
 {
 	background-color: #F2F2F2;
 	flex:1;
-	min-width: 340px;
 	border-radius: 20px;
 	margin: 20px 20px 20px 20px;
 }
@@ -419,15 +432,12 @@ nav
 
 .ActHor
 {
-	/*width: 100%;*/
-	/*min-width: 250px;*/
+
 	border-radius: 20px;
 	border: 0px solid white;
 	background-color: white;
 	box-shadow: 25px 16px 42px -9px rgba(186,186,186,0.67);
-	max-height: 280px;
-	/*margin-top: 20px;
-	margin-bottom: 20px;*/
+	max-height: 290px !important;
 }
 
 .haut{
@@ -442,6 +452,7 @@ nav
 	height: 80%;
 	object-fit: cover;
 	border-radius: 20px 20px 0 0;
+	max-height: 255px;
 }
 
 /*FOOTER*/
@@ -483,8 +494,8 @@ footer
 	color: #2265FC;
 }
 
-
-@media screen and (max-width: 375px) 
+/*SMARTPHONE*/
+@media only screen and (max-width: 414px) 
 
 {
 
@@ -528,18 +539,28 @@ nav img {
     color: #0065FC;
 }
 
+.Rechercher
+{
+	display: none;
 }
-/*
+
 #Marseille
 {
 	background-color: white;
 }
 
+#flexheb
+{
+	width: 100%;
+}
+
 
 #populaires
 {
-	margin: 0 0 0 0;
-	border-radius: none !important;
+	width: 100%;
+	min-width: 280px;
+	margin:0;
+	border-radius: 0;
 }
 
 
@@ -547,15 +568,22 @@ nav img {
 {
 	height: 100px;
 }
+
 .pop
 {
 	width: 40%;
 	
 }
 
+.Titresection
+{
+	margin-left:  0;
+}
+
 .Hébergements
 {
 	width: 90%;
+	min-width: 300px;
 	max-width: 340px;
 }
 
@@ -564,5 +592,96 @@ nav img {
 	margin: 0 0 0 0;
 }
 
+.hor,
+.ver,
+{
+	height: 180px;
+}
 
+.ver
+{
+	height: 80%;
+}
+
+
+#flexact1
+{
+	width: 100%;
+	min-width: 280px;
+	margin: 0;
+	justify-content: center;
+}
+
+.divfooter
+{
+	min-width: 280px;
+}
+}
+
+@media screen and (min-width: 415px) 
+{
+.rechercher2
+{
+	display: none;
+}
+
+}
+
+/*TABLETTES*/
+@media only screen and (max-width: 1080px) 
+
+{
+
+.Hébergements
+{
+	max-width: 150px;
+}
+
+#flexact1
+{
+	width: 80%;
+	justify-content: center;
+}
+
+#Marseille
+{
+	background-color: white;
+}
+
+#HM
+{
+	flex-direction: column-reverse;
+}
+
+
+#populaires
+{
+	width: 100%;
+	border-radius: 0%;
+	align-items: center;
+	justify-content: center;
+}
+}
+
+
+/*ORDINATEURS*/
+
+@media only screen and (min-width: 1436px) 
+
+{
+.Hébergements 
+{
+	min-width: 250px;
+	max-width: 350px;
+}
+}
+
+@media only screen and (min-width: 2200px) 
+
+{
+.Hébergements 
+{
+	min-width: 200px;
+	max-width: 500px;
+}
 }
