@@ -123,7 +123,7 @@ nav
 
 
 /*HEADER*/
-#Map
+#map
 {
 	size: 30px;
 	padding: 15px;
@@ -626,7 +626,23 @@ nav img {
 	display: none;
 }
 
+#flexheb
+{
+	margin-left: 10px;
 }
+
+
+
+}
+
+@media screen and (max-width: 680px)
+{
+.ver
+{
+	height: 85%;
+}
+}
+
 
 /*TABLETTES*/
 @media only screen and (max-width: 1080px) 
@@ -640,7 +656,7 @@ nav img {
 
 #flexact1
 {
-	width: 80%;
+	width: 100%;
 	justify-content: center;
 }
 
@@ -654,10 +670,10 @@ nav img {
 	flex-direction: column-reverse;
 }
 
-
 #container2
 {
 	width: 100%;
+	margin: 0 0 0 0 !important;
 	border-radius: 0%;
 	align-items: center;
 	justify-content: center;
