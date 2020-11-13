@@ -3,7 +3,7 @@
 @font-face
 {
 	font-family: "Raleway", sans-serif;
-	src: url('Raleway.ttf') format('truetype');
+	src: url('font/Raleway.ttf') format('truetype');
 }
 
 *{
@@ -60,8 +60,8 @@ img:hover
 /* NAVBAR */
 
 nav,
-.menu,
-.lienmenu {
+.navbar,
+.navbar_link {
     display: flex;
 }
 
@@ -72,21 +72,21 @@ nav img
     height: 60px;
 }
     
-/*.inscription {
+/*.suscribe {
     position: absolute;
     top: 35px;
     right: 15px;
 }*/
 
 
-.menu {
+.navbar {
 	justify-content: flex-end;
     align-items: right;
     width: 100%;
     height: 50px;
 }
    
-.lienmenu:hover 
+.navbar_link:hover 
 {
     border-top: 2px solid #0065FC;
 }
@@ -99,22 +99,22 @@ nav
 }
 
 
-.menu {
+.navbar {
     width: 100%;
 }
 
-.inscription 
+.suscribe 
 {
 	margin: 15px 0 0 10px;
 }
 
-.inscription a {
+.suscribe a {
     color: #0065FC;
     font-weight: bold;
 }
 
-.lienmenu,
-.inscription {
+.navbar_link,
+.suscribe {
     justify-content: center;
     align-items: center;
     width: 150px;
@@ -141,7 +141,7 @@ nav
 	border: 1px solid #F2F2F2;
 }
 
-.Rechercher
+#search
 {
 	height: 50px;
 	width: 100px;
@@ -156,7 +156,7 @@ nav
 	margin-left: -4px;
 }
 
-.Rechercher:selected
+#search:selected
 {
 	height: 50px;
 	width: 100px;
@@ -169,7 +169,7 @@ nav
 	box-shadow: none;
 }
 
-.rechercher2
+#search2
 {
     border-radius: 0px 20px 20px 0px;
     border: none;
@@ -200,20 +200,20 @@ nav
 	border-radius: 50%;
 }
 
-#Filtres
+#filter
 {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 }
 
-.Filtres:hover
+.filter:hover
 {
 	color: #2265FC;
 	font-weight: bold;
 }
 
-.Filtres:active
+.filter:active
 {
 	background-color: #2265FC;
 	color: white;
@@ -247,7 +247,7 @@ nav
 	color: #F2F2F2;
 }
 
-.Filtres
+.filter
 {
 	border: 1px solid #F2F2F2;
 	border-radius: 20px;
@@ -270,14 +270,14 @@ nav
 	flex-wrap: wrap;
 }
 
-#HM
+#container1
 {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap-reverse;
 }
 
-#Marseille 
+#heb 
 {
 	background-color: #F2F2F2;
 	border-radius: 20px;
@@ -286,7 +286,7 @@ nav
 	margin: 20px;
 }
 
-.Habitations 
+.accomodations 
 {
 	width: 100%; 
 	height: 150px; 
@@ -294,7 +294,7 @@ nav
 	border-radius: 20px 20px 0 0 ;
 }
 
-.Hébergements 
+.heb 
 {
 	min-width: 250px;
 	max-width: 300px;
@@ -309,7 +309,7 @@ nav
 
  /*POPULAIRES*/ 
 
-#populaires
+#container2
 {
 	background-color: #F2F2F2;
 	flex:1;
@@ -327,7 +327,7 @@ nav
 	border-radius: 20px 0 0 20px;
 }
 
-.populaires
+.popular
 {
 	border: 7px solid white;
 	background-color: white;
@@ -353,7 +353,7 @@ nav
   	margin: 20px;
   }
 
-  .prixpop
+  .pricepop
   {
   	margin-left: 10px;
   }
@@ -368,14 +368,14 @@ nav
 	margin-top: -5px;
 	float: right;
 }
-.Titresection
+.sectiontitle
 {
 	font-size: 1.6em !important;
 	margin-left: 30px !important;
 	margin-top: 20px !important;
 }
 
-#Afficherplus
+#showmore
 {
 	font-size: 1.4em !important;
 	font-weight: bold;
@@ -405,7 +405,7 @@ nav
 	margin: 20px;
 }
 
-.ActVer
+.actver
 {
 	width: 22%;
 	min-width: 250px;
@@ -430,7 +430,7 @@ nav
 
 
 
-.ActHor
+.acthor
 {
 
 	border-radius: 20px;
@@ -476,7 +476,7 @@ footer
 	margin-bottom: 40px;
 }
 
-.footertitre
+.footertitle
 {
 	font-weight: bold;
 	margin-bottom: 25px;
@@ -506,7 +506,7 @@ nav img {
     height: 60px;
 }
 
-.menu {
+.navbar {
     justify-content: space-evenly;
     align-items: center;
     margin-top: 75px;
@@ -515,36 +515,36 @@ nav img {
     height: 50px;
 }
 
-.inscription {
+.suscribe {
     position: absolute;
     top:10px;
     right: 0px;
 }
 
-.lienmenu {
+.navbar_link {
     width: 100%;
 }
 
-.lienmenu
+.navbar_link
 {
 	border-bottom: 2px solid #F2F2F2 ;
 }
 
-.lienmenu:hover {
+.navbar_link:hover {
     border-bottom: 2px solid #0065FC;
     border-top: none;
 } 
 
-.lienmenu a:hover {
+.navbar_link a:hover {
     color: #0065FC;
 }
 
-.Rechercher
+#search
 {
 	display: none;
 }
 
-#Marseille
+#heb
 {
 	background-color: white;
 }
@@ -555,7 +555,7 @@ nav img {
 }
 
 
-#populaires
+#container2
 {
 	width: 100%;
 	min-width: 280px;
@@ -564,7 +564,7 @@ nav img {
 }
 
 
-.populaires
+.popular
 {
 	height: 100px;
 }
@@ -575,19 +575,19 @@ nav img {
 	
 }
 
-.Titresection
+.sectiontitle
 {
 	margin-left:  0;
 }
 
-.Hébergements
+.heb
 {
 	width: 90%;
 	min-width: 300px;
 	max-width: 340px;
 }
 
-.Titresection
+.sectiontitle
 {
 	margin: 0 0 0 0;
 }
@@ -620,7 +620,8 @@ nav img {
 
 @media screen and (min-width: 415px) 
 {
-.rechercher2
+
+#search2
 {
 	display: none;
 }
@@ -632,7 +633,7 @@ nav img {
 
 {
 
-.Hébergements
+.heb
 {
 	max-width: 150px;
 }
@@ -643,18 +644,18 @@ nav img {
 	justify-content: center;
 }
 
-#Marseille
+#heb
 {
 	background-color: white;
 }
 
-#HM
+#container1
 {
 	flex-direction: column-reverse;
 }
 
 
-#populaires
+#container2
 {
 	width: 100%;
 	border-radius: 0%;
@@ -669,7 +670,7 @@ nav img {
 @media only screen and (min-width: 1436px) 
 
 {
-.Hébergements 
+.heb 
 {
 	min-width: 250px;
 	max-width: 350px;
@@ -679,7 +680,7 @@ nav img {
 @media only screen and (min-width: 2200px) 
 
 {
-.Hébergements 
+.heb 
 {
 	min-width: 200px;
 	max-width: 500px;
