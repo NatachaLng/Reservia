@@ -81,7 +81,6 @@ nav img
 
 .navbar {
 	justify-content: flex-end;
-    align-items: right;
     width: 100%;
     height: 50px;
 }
@@ -125,7 +124,6 @@ nav
 /*HEADER*/
 #map
 {
-	size: 30px;
 	padding: 15px;
 	padding-bottom: 18px;
 	color: black !important;
@@ -151,12 +149,11 @@ nav
 	font-family:"Raleway";
 	border-radius: 0px 20px 20px 0px;
 	background-color: #2265FC;
-	border-color: none;
 	box-shadow: none;
 	margin-left: -4px;
 }
 
-#search:selected
+#search:active
 {
 	height: 50px;
 	width: 100px;
@@ -176,7 +173,6 @@ nav
     padding-top: 3px;
     padding-bottom: 6px;
     margin-left: -3px;
-    size: 30px;
     font-size: 20px;
     background-color: #0065FC;
     color: white;
@@ -223,7 +219,6 @@ nav
 
 .fas
 {
-	box-sizing: 40px;
 	color: #2265FC;
 	padding: 10px;
 	background-size: 40px;
@@ -360,7 +355,6 @@ nav
 
 .fa-chart-line
 { 
-	box-sizing: 0px;
 	color: black;
 	background-size: 40px;
 	background-color: #F2f2f2;
@@ -594,7 +588,7 @@ nav img {
 }
 
 .hor,
-.ver,
+.ver
 {
 	height: 180px;
 }
