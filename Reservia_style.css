@@ -292,8 +292,10 @@ nav
 
 .heb 
 {
-	min-width: 200px;
+	min-width: 250px;
 	min-width: 30%;
+	max-width: 85%;
+	flex:1;
 	margin-left: 10px;
 	margin-right: 10px;
 	border:7px solid white;
@@ -365,14 +367,14 @@ nav
 }
 .sectiontitle
 {
-	font-size: 1.6em !important;
+	font-size: 1.6em ;
 	margin-left: 30px !important;
 	margin-top: 20px !important;
 }
 
 #showmore
 {
-	font-size: 1.4em !important;
+	font-size: 1.4em ;
 	font-weight: bold;
 	margin-left: 30px !important;
 	margin-top: 40px !important;
@@ -540,6 +542,15 @@ nav img {
 	display: none;
 }
 
+.sectiontitle
+{
+	font-size: 1.4em;
+}
+
+#showmore 
+{
+	font-size: 1.2em;
+}
 #heb
 {
 	background-color: white;
@@ -548,6 +559,7 @@ nav img {
 #flexheb
 {
 	width: 100%;
+	justify-content: center;
 }
 
 
@@ -562,7 +574,7 @@ nav img {
 
 .popular
 {
-	height: 100px;
+	height: auto;
 }
 
 .pop
@@ -571,22 +583,12 @@ nav img {
 	
 }
 
-.sectiontitle
-{
-	margin-left:  0;
-}
 
 .heb
 {
-	width: 90%;
-	min-width: 300px;
-	max-width: 340px;
+	min-width: 90%;
 }
 
-.sectiontitle
-{
-	margin: 0 0 0 0;
-}
 
 .hor,
 .ver
@@ -627,7 +629,10 @@ nav img {
 	margin-left: 10px;
 }
 
-
+.heb
+{
+	max-width: 85%;
+}
 
 }
 
@@ -641,13 +646,14 @@ nav img {
 
 
 /*TABLETTES*/
-@media only screen and (max-width: 1080px) 
+@media only screen and (min-width: 680px) and (max-width: 1080px) 
 
 {
 
 .heb
 {
-	max-width: 150px;
+	max-width: 85%;
+	min-width: 250px;
 }
 
 #flexact1
@@ -676,25 +682,3 @@ nav img {
 }
 }
 
-
-/*ORDINATEURS*/
-
-@media only screen and (min-width: 1436px) 
-
-{
-.heb 
-{
-	min-width: 250px;
-	max-width: 350px;
-}
-}
-
-@media only screen and (min-width: 2200px) 
-
-{
-.heb 
-{
-	min-width: 200px;
-	max-width: 500px;
-}
-}
